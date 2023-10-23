@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .bear{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .bear::before{
+            content: "";
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            right: -5%;
+            bottom: 0;
+            margin: auto;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .bear::after{
+            content: "";
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: -5%;
+            bottom: 0;
+            margin: auto;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .ear{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            right: 0;
+            margin: auto;
+            /* background-color: rgb(250, 228, 228); */
+            border-radius: 50%;
+        }
+
+        .ear::before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            right: 80px;
+            margin: auto;
+            background-color: white;
+            border: 7px solid black;
+            border-radius: 50%;
+        }
+
+        .ear::after{
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: 80px;
+            margin: auto;
+            background-color: white;
+            border: 7px solid black;
+            border-radius: 50%;
+        }
+        /* .inEar{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            right: 0;
+            margin: auto;
+            background-color: rgb(250, 228, 228);
+            border-radius: 50%;
+        } */
+
+        /* .inEar::before{
+            content: "";
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 20%;
+            right: 83px;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;
+        } */
+
+        /* .inEar::after{
+            content: "";
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 20%;
+            left: 83px;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;
+        } */
+        .eye-white{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            /* background-color: rgb(250, 228, 228); */
+            border-radius: 50%;
+        }
+        .eye-white::before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+            margin: auto;
+            background-color: black;
+            border: 7px solid white;
+            border-radius: 50%;
+        }
+        .eye-white::after{
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 40px;
+            bottom: 40px;
+            margin: auto;
+            background-color: black;
+            border: 7px solid white;
+
+            border-radius: 50%;
+        }
+
+        .mouth{
+            width: 80px;
+            height: 60px;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .mouth::before{
+            content: "";
+            width: 45px;
+            height: 15px;
+            position: absolute;
+            top: 30%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .mouth::after{
+            content: "";
+            width: 20px;
+            height: 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 50%;
+            margin: auto;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .v-collar{
+            width: 40px;
+            height: 20px;
+            position: absolute;
+            bottom: 10%;
+            left: 0%;
+            right: 0;
+            margin: auto;
+            /* background-color: rgb(250, 228, 228); */
+        }
+        .v-collar::before{
+            content: "";
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            bottom: 12%;
+            left: -40px;
+            right: 0;
+            margin: auto;
+            background-color: white;
+            transform: skew(50deg,0);
+        }
+
+        .v-collar::after{
+            content: "";
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            bottom: 12%;
+            left: 0;
+            right: -40px;
+            margin: auto;
+            background-color: white;
+            transform: skew(-50deg,0);
+            
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="bear">
+        <div class="ear"></div>
+        <div class="inEar"></div>
+        <div class="eye-white">
+        </div>
+        <div class="mouth"></div>
+        <div class="v-collar"></div>
+    </div>
+</body>
+</html>
